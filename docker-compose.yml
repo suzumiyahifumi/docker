@@ -32,3 +32,8 @@ services:
     environment: *AUTH
 volumes:
   healthcheck-volume:
+  
+networks:
+  citus-network:
+    external:
+      name: citus-network
